@@ -1,0 +1,23 @@
+# Setting up a host tcp server - 
+nc -l 2399
+
+# Setting up a client tcp server - 
+nc localhost 2399
+
+# Setting up a host udp server - 
+nc -u -l 2399
+
+# Setting up a client upd server - 
+nc -u localhost 2399
+
+# Listen for TCP on specific host and port using netcat
+nc -lv  192.168.0.5 8080
+
+
+# Listen for UDP on specific host and port using netcat
+# Listen for the connections and print the data sent by the clients
+nc -lvu [IP Address] 8080
+nc -lvu  192.168.0.5 8080
+
+# To see established IP addresses
+netstat -vatn
